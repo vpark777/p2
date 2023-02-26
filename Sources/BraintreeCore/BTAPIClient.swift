@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc public class BTAPIClient: NSObject {
+@objcMembers public class BTAPIClient: NSObject {
     private let clientToken: String
 
     public init(clientToken: String) {
