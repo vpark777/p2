@@ -26,8 +26,12 @@ let package = Package(
             name: "BraintreeCore",
             path: "Sources/BraintreeCore"
         ),
-        .testTarget(
+        .target(
             name: "BraintreeCard",
-            dependencies: ["BraintreeCore"]),
+            dependencies: ["BraintreeCore"],
+            path: "Sources/BraintreeCard",
+            sources: ["BTCardClient.m"],
+            publicHeadersPath: "."
+            )
     ]
 )
