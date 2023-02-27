@@ -7,7 +7,7 @@
 
 #import "BTCardClient.h"
 
-//@import BraintreeCore;
+@import BraintreeCore;
 /*
  the problem is that the ClangImporter, which is responsible for importing Objective-C code into Swift, does not properly tie an @class or @protocol declaration in imported Objective-C to a corresponding @objc class or @objc protocol definition in Swift.
 

@@ -7,8 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-//@class BTAPIClient;
-@import BraintreeCore;
+@class BTAPIClient;
 
 @interface BTCardClient : NSObject
 
