@@ -31,7 +31,13 @@ let package = Package(
             dependencies: ["BraintreeCore"],
             path: "Sources/BraintreeCard",
             sources: ["BTCardClient.m"],
-            publicHeadersPath: "."
+            publicHeadersPath: ".",
+            swiftSettings: [
+                .unsafeFlags([
+                    "-import-swift-header",
+                    "BraintreeCore-Swift.h"
+                ])
+            ]
             )
     ]
 )
