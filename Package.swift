@@ -34,8 +34,8 @@ let package = Package(
             publicHeadersPath: ".",
             swiftSettings: [
                 .unsafeFlags([
-                    "-import-swift-header",
-                    "BraintreeCore-Swift.h"
+                    "--import-swift-header",
+                    "Sources/BraintreeCore/BraintreeCore-Swift.h"
                 ])
             ]
             )
